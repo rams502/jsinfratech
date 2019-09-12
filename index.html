@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta name="google-site-verification" content="c4ScFhwmUWDIWurgEpp9quqY_MNEr8E7HFSyb9XBxR4" />
+  <title>JS Infratech</title>
+<style>
+  body{
+  background: #1e5799; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhZDk1NWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #1e5799 0%, #ad955d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#ad955d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#ad955d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#ad955d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#ad955d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#ad955d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ad955d',GradientType=0 ); /* IE6-8 */
+
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container{
+  width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header{
+  margin-top: 200px;
+  color: white;
+}
+header h1{
+  font-size: 95px;
+  display: inline-block;
+}
+header .inputs{
+  display: inline-block;
+  vertical-align: 90%;
+}
+header input[type=text]{
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  color: black;
+}
+header input[type=submit]{
+  background: green;
+  border-radius: 0px 10px 10px 0;
+  padding: 10.5px;
+  border: 2px solid #4dbc4d;
+  position: relative;
+  right: 5px;
+}
+.articles{
+  position: fixed;
+  left: 0px;
+  bottom: -300px;
+  background: black;
+  width: 100%;
+  color: white;
+  padding: 0 0 20px 0;
+}
+.articles h3{
+  text-align: center;
+  font-size: 23px;
+  padding-bottom: 25px;
+  font-weight: lighter;
+}
+.articles-inner{
+  overflow: hidden;
+  width: 1140px;
+  margin:  auto;
+}
+.articles ul li{
+  width: 250px;
+  height: 250px;
+  float: left;
+  background: #ccc;
+  margin-right: 25px;
+  list-style-type: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Coming Soon</h1>
+    <div class="inputs">
+    <input type="text" placeholder="Notify Me"/>
+    <input type="submit" value="Submit"/>
+    </div>  
+  </header>
+
+  
+</body>
+<script type="text/javascript">
+  $(function(){
+  $('.articles').on('click', function(){
+    if($('.articles').css('bottom') == '-300px'){
+      $(this).stop().animate({
+        bottom: '0px'
+      })
+    }else{
+      $(this).stop().animate({
+        bottom: '-300px'
+      })
+    }
+  })
+})
+</script>
+</html>
